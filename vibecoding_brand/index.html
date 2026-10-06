@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Студия дизайна и разработки. Делаем сложное — простым.">
+  <title>BRAND — студия дизайна</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body id="top">
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#top" class="logo">BRAND</a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <form class="search" role="search" action="/search">
+        <label for="site-search" class="sr-only">Поиск</label>
+        <input id="site-search" type="search" name="q" placeholder="Поиск">
+        <button type="submit" aria-label="Найти">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+
+      <a href="#contact" class="btn-login"><span>Войти</span></a>
+
+      <button class="burger"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+              aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__inner">
+
+      <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+        <ul>
+          <li><a href="#hero"    data-index="1">Главная</a></li>
+          <li><a href="#about"   data-index="2">О нас</a></li>
+          <li><a href="#contact" data-index="3">Контакты</a></li>
+          <li><a href="#footer"  data-index="4">Подвал</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu__footer" data-index="5">
+        <a href="mailto:hi@brand.com">hi@brand.com</a>
+        <a href="tel:+70000000000">+7 000 000-00-00</a>
+        <a href="#contact" class="mobile-menu__login">Войти</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== SIDE DOTS ========== -->
+  <nav class="side-dots" aria-label="Навигация по секциям">
+    <a href="#hero"    data-label="Начало"    data-section="hero"></a>
+    <a href="#about"   data-label="О нас"     data-section="about"></a>
+    <a href="#contact" data-label="Связаться" data-section="contact"></a>
+  </nav>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="container">
+
+        <p class="hero-label">
+          <span class="badge">
+            <span class="badge__dot"></span>
+            Свободны для проектов
+          </span>
+        </p>
+
+        <h1 class="hero-title">
+          <span class="word"><span>Сложное</span></span>
+          <span class="word"><span>делаем</span></span>
+          <span class="word"><span>простым</span></span>
+        </h1>
+
+        <div class="hero-meta">
+          <span>Студия дизайна и разработки</span>
+          <span>Москва · с 2018</span>
+          <span class="hero-meta__scroll">Scroll ↓</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Дизайн</span><span>Разработка</span><span>Брендинг</span><span>Motion</span>
+        <span>Дизайн</span><span>Разработка</span><span>Брендинг</span><span>Motion</span>
+      </div>
+    </div>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about reveal section-num" id="about" data-num="01"
+             aria-labelledby="about-title">
+      <div class="container">
+
+        <div class="about-head">
+          <p class="about-label">О нас</p>
+          <h2 id="about-title" class="about-title">
+            Делаем сложное — простым
+          </h2>
+        </div>
+
+        <div class="about-body">
+          <p class="about-text">
+            Мы — небольшая команда, которая верит, что хороший дизайн
+            не нужен. Он незаметен. Мы убираем лишнее, оставляя только то,
+            что действительно работает.
+          </p>
+          <p class="about-text">
+            С 2018 года мы помогаем брендам говорить яснее, выглядеть
+            строже и двигаться быстрее.
+          </p>
+        </div>
+
+        <div class="about-stats reveal-stagger">
+          <div class="stat">
+            <span class="stat-num counter" data-target="120" data-suffix="+">0+</span>
+            <span class="stat-label">проектов</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="8">0</span>
+            <span class="stat-label">лет на рынке</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="14">0</span>
+            <span class="stat-label">человек в команде</span>
+          </div>
+        </div>
+
+        <a href="#contact" class="about-link link-u">
+          <span>Познакомиться с командой</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="13 6 19 12 13 18"></polyline>
+          </svg>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact reveal section-num" id="contact" data-num="02"
+             aria-labelledby="contact-title">
+      <div class="container">
+
+        <div class="contact-head">
+          <p class="contact-label">Связаться</p>
+          <h2 id="contact-title" class="contact-title">
+            Расскажите о задаче
+          </h2>
+          <p class="contact-sub">
+            Ответим в течение одного рабочего дня.
+          </p>
+        </div>
+
+        <form class="contact-form" action="#" method="post" novalidate>
+
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" type="text" name="name"
+                   placeholder="Как к вам обращаться"
+                   autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email"
+                   placeholder="you@example.com"
+                   autocomplete="email" required>
+          </div>
+
+          <div class="field field--full">
+            <label for="subject">Тема</label>
+            <input id="subject" type="text" name="subject"
+                   placeholder="Коротко о запросе">
+          </div>
+
+          <div class="field field--full">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="5"
+                      placeholder="Опишите задачу, сроки, бюджет"
+                      required></textarea>
+          </div>
+
+          <label class="checkbox field--full">
+            <input type="checkbox" name="agree" required>
+            <span class="checkbox-box" aria-hidden="true"></span>
+            <span class="checkbox-text">
+              Согласен с обработкой персональных данных
+            </span>
+          </label>
+
+          <div class="form-footer field--full">
+            <button type="submit" class="btn-submit">
+              <span>Отправить</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="13 6 19 12 13 18"></polyline>
+              </svg>
+            </button>
+
+            <p class="form-note">
+              Или напишите на
+              <a href="mailto:hi@brand.com" class="link-u">hi@brand.com</a>
+            </p>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#top" class="footer-logo">BRAND</a>
+          <p class="footer-tagline">
+            Студия дизайна и разработки.<br>
+            Делаем сложное — простым.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Меню в подвале">
+          <div class="footer-col">
+            <h3 class="footer-col-title">Студия</h3>
+            <ul>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#about">Команда</a></li>
+              <li><a href="#about">Вакансии</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col-title">Работы</h3>
+            <ul>
+              <li><a href="#hero">Кейсы</a></li>
+              <li><a href="#hero">Услуги</a></li>
+              <li><a href="#hero">Процесс</a></li>
+              <li><a href="#hero">Блог</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col-title">Связь</h3>
+            <ul>
+              <li><a href="mailto:hi@brand.com">hi@brand.com</a></li>
+              <li><a href="tel:+70000000000">+7 000 000-00-00</a></li>
+              <li><a href="#footer">Telegram</a></li>
+              <li><a href="#footer">Instagram</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 BRAND. Все права защищены.</p>
+
+        <ul class="footer-legal">
+          <li><a href="#footer">Политика конфиденциальности</a></li>
+          <li><a href="#footer">Условия использования</a></li>
+        </ul>
+
+        <a href="#top" class="footer-up" aria-label="Наверх">
+          <span>Наверх</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.5">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="6 11 12 5 18 11"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="scroll.js" defer></script>
+  <script src="menu.js" defer></script>
+  <script src="cursor.js" defer></script>
+
+</body>
+</html>
